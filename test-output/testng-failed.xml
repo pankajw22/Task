@@ -5,7 +5,6 @@
     <classes>
       <class name="com.practice.qa.tests.LoginTest">
         <methods>
-          <include name="turnDown"/>
           <include name="setup"/>
           <include name="verifyLoginWithValidCredentials"/>
         </methods>

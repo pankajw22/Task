@@ -10,11 +10,11 @@ public class LoginPage {
 	WebDriver driver;
 // initialise the webelemnts
 	
-	@FindBy(xpath = "//span[text() = 'Account & Lists']")
-	WebElement clickOnSingn;
+	@FindBy(xpath = "//span[normalize-space() = 'Account & Lists']")
+	WebElement AccountandList;
 
 	@FindBy(id = "ap_email")
-	WebElement emailidfield;
+	WebElement emailidField;
 	
 	@FindBy(id = "continue")
 	WebElement contiune;
@@ -23,7 +23,7 @@ public class LoginPage {
 	WebElement passwordField;
 	
 	@FindBy(id = "signInSubmit")
-	WebElement clickOnSingINbtn;
+	WebElement SingINbtn;
 
 	// use constructor 
 	public LoginPage(WebDriver driver) {
@@ -32,12 +32,12 @@ public class LoginPage {
 	}
 	
 	// several methods
-	public void clickOntheSignInBtn() {
-		clickOnSingn.click();
+	public void clickOnAccountListIcon() {
+		AccountandList.click();
 	}
 	
-	public void enterEmailid(String emailtext) {
-		emailidfield.sendKeys(emailtext);
+	public void enterEmailid(String emailText) {
+		emailidField.sendKeys(emailText);
 	}
 	public void ClickOnContinue() {
 		contiune.click();
@@ -47,8 +47,8 @@ public class LoginPage {
 		passwordField.sendKeys(password);
 	}
 	
-	public void clickONSingnbtn() {
-		clickOnSingINbtn.click();
+	public void clickONSingnINbtn() {
+		SingINbtn.click();
 	}
 	
 	

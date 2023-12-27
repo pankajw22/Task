@@ -21,14 +21,14 @@ public class LoginTest extends BaseClass {
 		driver.quit();
 	}
 	
-	// this is the test case where we can verifu login
+	// this is the test case where we can verify login
 	@Test ( priority = 1)
 	public void verifyLoginWithValidCredentials() {
 		LoginPage loginpage = new LoginPage(driver);
-		loginpage.clickONSingnbtn();
+		loginpage.clickOnAccountListIcon();
 		loginpage.enterEmailid("pankaj@gmail.com");
 		loginpage.ClickOnContinue();
 		loginpage.enterPassword("pankaj232");
-		loginpage.clickOntheSignInBtn();
+		loginpage.clickONSingnINbtn();
 	}
 }
