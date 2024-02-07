@@ -9,19 +9,19 @@ import com.practice.qa.pages.LoginPage;
 
 public class LoginTest extends BaseClass {
 	
-	// this method run before every method
+	
 	@BeforeMethod
 	public void setup() {
 		driver = launchBrowserAndOpenApplication();
 	}
 	
-	// this method run after every method
+	
 	@AfterMethod
 	public void turnDown() {
 		driver.quit();
 	}
 	
-	// this is the test case where we can verify login
+	
 	@Test ( priority = 1)
 	public void verifyLoginWithValidCredentials() {
 		LoginPage loginpage = new LoginPage(driver);
