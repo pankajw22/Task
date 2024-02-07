@@ -8,7 +8,7 @@ import org.openqa.selenium.support.PageFactory;
 public class LoginPage {
 
 	WebDriver driver;
-// initialise the webelemnts
+// initialise the web elemnts
 	
 	@FindBy(xpath = "//span[normalize-space() = 'Account & Lists']")
 	WebElement AccountandList;
